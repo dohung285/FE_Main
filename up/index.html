@@ -1,89 +1,84 @@
- <!DOCTYPE html>
- <html lang="en" data-theme="light">
- <head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="css/main-style.css">
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main-style.css">
 
 
-      <!-- Google Fonts -->
+  <!-- Google Fonts -->
 
-    <link
+  <link
     href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
-    rel="stylesheet"
-  />
+    rel="stylesheet" />
 
   <!-- Font Awesome -->
 
-  <script
-    src="https://kit.fontawesome.com/fbadad80a0.js"
-    crossorigin="anonymous"
-  ></script>
+  <script src="https://kit.fontawesome.com/fbadad80a0.js" crossorigin="anonymous"></script>
 
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/svg" href="img/logo/favicon.svg" />
-      
 
 
-     <title>Document</title>
- </head>
- <body class="container">
 
-    <!---*-*-*-*-*-*-*-*--*-*-*- Header Section --*-*-*-*-*-*-*-*-*-*-*-->
-    <header class="header">
-        Hamburger Lines Container
-        <div class="header__menu">
-          <div class="header__menu--line"></div>
+  <title>Document</title>
+</head>
+
+<body class="container">
+
+  <!---*-*-*-*-*-*-*-*--*-*-*- Header Section --*-*-*-*-*-*-*-*-*-*-*-->
+  <header class="header">
+    <div class="header__menu">
+      <div class="header__menu--line"></div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="header__overlay"></div>
+
+    <!-- Navigation -->
+    <nav class="header__nav">
+      <a href="#" class="header__nav--logo"><img src="img/logo/logo.svg" alt="logo" /></a>
+
+      <ul class="header__nav--links">
+        <li class="header__nav--links__item">
+          <a href="#" data-text="Home">Home</a>
+        </li>
+
+        <li class="header__nav--links__item">
+          <a href="#" data-text="About">About</a>
+        </li>
+
+        <li class="header__nav--links__item">
+          <a href="#" data-text="Classes">Classes</a>
+        </li>
+
+        <li class="header__nav--links__item">
+          <a href="#" data-text="Events">Events</a>
+        </li>
+
+        <li class="header__nav--links__item">
+          <a href="#" data-text="News">News</a>
+        </li>
+
+        <li class="header__nav--links__item">
+          <a href="#" data-text="Shop">Shop</a>
+        </li>
+
+        <div class="header__nav--links__toggle-container">
+          <input type="checkbox" id="toggle" name="theme" />
         </div>
-  
-        <!-- Overlay -->
-        <div class="header__overlay"></div>
-  
-        <!-- Navigation -->
-        <nav class="header__nav">
-          <a href="#" class="header__nav--logo"
-            ><img src="img/logo/logo.svg" alt="logo"
-          /></a>
-  
-          <ul class="header__nav--links">
-            <li class="header__nav--links__item">
-              <a href="#" data-text="Home">Home</a>
-            </li>
-  
-            <li class="header__nav--links__item">
-              <a href="#" data-text="About">About</a>
-            </li>
-  
-            <li class="header__nav--links__item">
-              <a href="#" data-text="Classes">Classes</a>
-            </li>
-  
-            <li class="header__nav--links__item">
-              <a href="#" data-text="Events">Events</a>
-            </li>
-  
-            <li class="header__nav--links__item">
-              <a href="#" data-text="News">News</a>
-            </li>
-  
-            <li class="header__nav--links__item">
-              <a href="#" data-text="Shop">Shop</a>
-            </li>
-  
-            <div class="header__nav--links__toggle-container">
-              <input type="checkbox" id="toggle" name="theme" />
-            </div>
-          </ul>
-        </nav>
-      </header>
+      </ul>
+    </nav>
+  </header>
 
 
-       <!---*-*-*-*-*-*-*-*--*-*-*- Showcase Section --*-*-*-*-*-*-*-*-*-*-*-->
-    <section class="showcase">
-        <div class="showcase__content">
-          <h1 class="showcase__content--title">Showcase</h1>
-          <!-- <p class="showcase__content--para">
+  <!---*-*-*-*-*-*-*-*--*-*-*- Showcase Section --*-*-*-*-*-*-*-*-*-*-*-->
+  <section class="showcase">
+    <div class="showcase__content">
+      <h1 class="showcase__content--title">Showcase</h1>
+      <!-- <p class="showcase__content--para">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique,
             est.
           </p>
@@ -91,11 +86,20 @@
             <a href="#">Find out more</a>
             <a href="#">Join now</a>
           </div> -->
-        </div>
-      </section>
+    </div>
+  </section>
+
+
+  <!-- *-*-*-*-*-*-*-*-*-*-*-*-*-*-* JavaScript Files *-*-*-*-*-*-*-*-*-*-*-*-*-*-* -->
+  <!-- Nav -->
+  <script src="js/nav.js"></script>
+
+  <!-- Dark Mode -->
+  <script src="js/dark-mode.js"></script>
 
 
 
-     
- </body>
- </html>
+
+</body>
+
+</html>

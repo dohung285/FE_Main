@@ -1,6 +1,20 @@
 
 
-@import "1.reset" ;
+//*-*-*-*-*-*-*-*-*-*-- The 1300px Mark Break Point*-*-*-*-*-*-*-*-*-*-*
+@mixin media-desktop {
+    @media screen and (min-width: break-point(break-point-desktop)) {
+      @content;
+    }
+  }
+
+//*-*-*-*-*-*-*-*-*-*-- The 800px Mark Break Point*-*-*-*-*-*-*-*-*-*-*
+@mixin media-tablet {
+    @media screen and (max-width: break-point(break-point-tablet)) {
+        @content;
+    }
+}
+
+@import "1.reset";
 
 @import "2.variables";
 
@@ -8,4 +22,4 @@
 
 @import "4.header";
 
-@import "5.showcase"
+@import "5.showcase";
